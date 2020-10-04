@@ -9,6 +9,7 @@ import { ShowroomComponent } from './showroom/showroom.component';
 import { RoomComponent } from './room/room.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainComponent } from './main/main.component';
     ShowroomComponent,
     RoomComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
