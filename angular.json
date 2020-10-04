@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "studio22-ng"
+    }
+  },
+  "defaultProject": "studio22-ng",
+  "cli": {
+    "analytics": "46a60c86-275d-47eb-9915-3143eab29925"
+  }
 }
