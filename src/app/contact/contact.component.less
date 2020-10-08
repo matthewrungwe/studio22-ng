@@ -1,3 +1,4 @@
+/* Import resources */
 @import "../../assets/app/less/libs/_vars.less";
 
 #contact {
@@ -8,17 +9,18 @@
   display: flex;
   width: 90%;
   margin: 0 auto;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
-.contact-from,
+.contact-form,
 .contact-details {
   flex: 1;
 }
 
+/* Contact Form Block */
 .contact-form {
   margin: 20px 0;
-  border: 1px solid orange;
+  // border: 1px solid orange;
 
   label {
     color: @palette[fg];
@@ -43,7 +45,7 @@
   }
 
   .input-block {
-    border: 1px solid red;
+    // border: 1px solid red;
     margin: 10px 5px;
     height: fit-content;
 
@@ -61,7 +63,7 @@
   }
 
   .textarea-block {
-    border: 1px solid green;
+    // border: 1px solid green;
     margin: 10px 5px;
 
     textarea {
@@ -78,7 +80,7 @@
   .submit-btn-block {
     margin: 10px 5px;
     height: 50px;
-    border: 1px solid green;
+    // border: 1px solid green;
 
     input[type="submit"] {
       font-size: 1rem;
@@ -93,6 +95,27 @@
   }
 }
 
+/* Contact Details Block */
+.contact-details {
+  margin: 20px 0;
+  // border: 1px solid orange;
+
+  .detail {
+    padding: 20px;
+    border-top: 2px solid @palette[bg-alt];
+
+    h2 {
+      color: @palette[fg];
+      font-weight: @font[weight-bold];
+    }
+
+    p {
+      color: @palette[fg];
+    }
+  }
+}
+
+
 @media screen and  (max-width: 62rem) {
   .contact-wrap {
     display: flex;
@@ -101,6 +124,16 @@
     .contact-form{
       width: 90%;
       margin: 20px auto;
+    }
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .contact-form {
+
+    .name-email-block {
+      display: flex;
+      flex-flow: column;
     }
   }
 }
