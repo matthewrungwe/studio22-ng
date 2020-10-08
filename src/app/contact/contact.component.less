@@ -1,8 +1,106 @@
+@import "../../assets/app/less/libs/_vars.less";
+
+#contact {
+  background-color: @palette[bg];
+}
+
 .contact-wrap {
   display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
 .contact-from,
 .contact-details {
   flex: 1;
+}
+
+.contact-form {
+  margin: 20px 0;
+  border: 1px solid orange;
+
+  label {
+    color: @palette[fg];
+    font-weight: @font[weight-bold];
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  input[type = "text"],
+  input[type = "email"],
+  textarea {
+    display: block;
+    background-color: @palette[bg-alt];
+  }
+
+  .name-email-block {
+    display: flex;
+
+    .input-block {
+      flex: 1;
+    }
+  }
+
+  .input-block {
+    border: 1px solid red;
+    margin: 10px 5px;
+    height: fit-content;
+
+    input[type="text"],
+    input[type="email"] {
+      color: @palette[fg];
+      font-size: 1rem;
+      width: 80%;
+      height: 2.75em;
+      border-radius: 0;
+      margin: 10px 0;
+      padding: 0 1em;
+      border: none;
+    }
+  }
+
+  .textarea-block {
+    border: 1px solid green;
+    margin: 10px 5px;
+
+    textarea {
+      font-size: 1rem;
+      color: @palette[fg];
+      padding: 1em;
+      margin: 10px 0;
+      width: 92%;
+      height: 200px;
+      border: none;
+    }
+  }
+
+  .submit-btn-block {
+    margin: 10px 5px;
+    height: 50px;
+    border: 1px solid green;
+
+    input[type="submit"] {
+      font-size: 1rem;
+      color: @palette[bg-alt];
+      font-weight: @font[weight-bold];
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      width: 100px;
+      height: 100%;
+      border: none;
+    }
+  }
+}
+
+@media screen and  (max-width: 62rem) {
+  .contact-wrap {
+    display: flex;
+    flex-flow: column;
+
+    .contact-form{
+      width: 90%;
+      margin: 20px auto;
+    }
+  }
 }

@@ -1,21 +1,36 @@
-<div class="contact-wrap">
-  <div class="contact-form">
-    <form action="" method="post">
-      <input type="text" name="" id="">
-      <input type="email" name="" id="">
-      <textarea name="" id="" cols="30" rows="10"></textarea>
-      <input type="submit" value="Sumbit">
-    </form>
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="contact-form">
+      <form action="" method="post">
+        <div class="name-email-block">
+          <div class="input-block">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+          </div>
+          <div class="input-block">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+        </div>
+        <div class="textarea-block">
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <div class="submit-btn-block">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+    <div class="contact-details">
+      <div>
+        Email
+      </div>
+      <div>
+        Phone
+      </div>
+      <div>
+        Address
+      </div>
+    </div>
   </div>
-  <div class="contact-details">
-    <div>
-      Email
-    </div>
-    <div>
-      Phone
-    </div>
-    <div>
-      Address
-    </div>
-  </div>
-</div>
+</section>
